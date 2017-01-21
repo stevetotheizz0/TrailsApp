@@ -4,9 +4,7 @@ $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
 });
 
 
-//var dataset = "https://raw.githubusercontent.com/stevetotheizz0/stevetotheizz0.github.io/master/test.json";
-
-var dataset = "https://raw.githubusercontent.com/stevetotheizz0/TrailsApp/master/TrailsApp/test-old.json";
+var dataset = "https://raw.githubusercontent.com/stevetotheizz0/stevetotheizz0.github.io/master/test.json";
 
 
 var map = L.map('map', {
