@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ORNL Biking and Running App</title>
+    <!-- Comment -->
+    <!-- CSS Imports -->
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/leaflet.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/trailsApp.css"/>
+
+</head>
+
+<body id="page-top" class="index">
+  <section id="about">
+    <!-- Navigation -->
+    <div id="wrapper">
+      <div id="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container navbar-custom">
+              <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll navbar-custom">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img class="logo" src="img/ornl_transparent_leaf_small.png">
+                <a class="navbar-brand page-scroll navbar-custom" href="#page-top">ORNL Trails</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right navbar-custom">
+                    <li>
+                      <a href="#about" class="dropdown-item" id="about-item">About</a>
+                    </li>
+                    <li>
+                      <a href="#contact" class="dropdown-item" id="contact-item">Contact</a>
+                    </li>
+                    <li>
+                      <a href="#legend" class="dropdown-item" id="legend-item">Legend</a>
+                    </li>
+                </ul>
+            </div>
+
+          </div>
+
+        </nav>
+      </div>
+      <div id="menu-item-wrapper">
+        <div id="legend-page" class="menu-item" style="display: none;">
+          <span class="closebtn">x</span>
+          <div class="menu-text">
+            <h3><p>Below are the different types of trails shown on the map.</p></h3>
+            <table>
+              <tr>
+                <td><img src="img/green.png"></td>
+                <td style="padding-left: 5px">Preferred for Staff Use</td>
+              </tr>
+              <tr>
+                <td><img src="img/red.png"></td>
+                <td style="padding-left: 5px">Restricted Access</td>
+              </tr>
+            </table>
+        </div>
+        </div>
+        <div id="about-page" class="menu-item" style="display: none;">
+            <span class="closebtn">x</span>
+            <div class="menu-text">
+              <div class="menu-text">
+                <p>This app will show you which trails are open for biking and running and give you updates to which areas are closed for construction and security purposes.</p>
+                <br>
+                <p>If you would like to contribute, the source code is available on ORNL's GitLab at:</p>
+                 <p><a href="https://code-int.ornl.gov/qs8/ORNL_Trails_App">https://code-int.ornl.gov/qs8/ORNL_Trails_App</a></p>
+              </div>
+          </div>
+        </div>
+        <div id="contact-page" class="menu-item" style="display: none;">
+          <span class="closebtn">x</span>
+          <div class="menu-text">
+            <p>To send us feedback us any question or comments<br>
+            email us at <a href="mailto:ORNLtrailsapp@ornly.gov?Subject=ORNL%20Trails%20App%20Feedback">ORNLtrailsapp@ornl.gov</a></p>
+            <br>
+            <p>To contact LSS with non-emergency calls</p>
+            <p>Call <a class="phone-mobile" href="tel:865-574-6606">574-6606</a></p>
+        </div>
+        </div>
+      </div>
+  </section>
+
+    <div id="footer">
+        <div class="btn-group btn-group-justified btn-group-fixed-bottom" role="group">
+          <div class="btn-group" role="group" id="allTrails">
+            <button type="button" class="btn btn-default">All Trails</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" id="preferredTrails">Preferred</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" id="restrictedTrails">Restricted</button>
+          </div>
+        </div>
+      </div>
+    <div id="map" class="map"></div>
+</div>
+
+  <!-- js scripts -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/trailsApp.js"></script>
+  <script src="js/trailButtons.js"></script>
+</body>
+
+</html>
